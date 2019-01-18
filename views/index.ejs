@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Bienvenue à la <%= title %>, traiteur</p>
+    <img id= toasts src="/images/toasts.png" alt="toasts">
+
+    <ul>
+
+    <% for (var i = 0; i<products.length; i++) { %>
+     <li> <a name=products[i] href="/shop?name=<%= products[i] %>"> <%= products[i] %> </a> </li>
+
+    <% } %>
+
+    </ul>
+
+  </body>
+</html>
